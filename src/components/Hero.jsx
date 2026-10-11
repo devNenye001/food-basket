@@ -17,6 +17,7 @@ export default function Hero({ onOpenOrder }) {
           alt="Freshly baked artisan banana bread" 
           className="hero-bg-img" 
         />
+        <div className="hero-overlay"></div>
       </div>
 
       <div className="hero-content">
