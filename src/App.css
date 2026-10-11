@@ -228,24 +228,20 @@
 .mobile-menu-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 28px;
+  justify-content: flex-end;
+  margin-bottom: 24px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgba(255, 239, 193, 0.2);
 }
 
-.mobile-menu-logo {
-  height: 44px;
-  width: auto;
-}
-
 .mobile-close-btn {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #FFEFC1;
   line-height: 1;
   background: none;
   border: none;
   cursor: pointer;
+  padding: 4px 8px;
 }
 
 .mobile-nav-links {

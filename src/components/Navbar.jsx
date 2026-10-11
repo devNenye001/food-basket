@@ -62,26 +62,29 @@ export default function Navbar({ onNavigate, onOpenOrder, currentView }) {
 
         {/* Desktop CTA */}
         <div className="navbar-cta-desktop">
-          <button 
-            type="button" 
+          <a 
+            href="https://wa.me/234912004419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-order-now"
-            onClick={onOpenOrder}
           >
             Order Now
-          </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger Button */}
-        <button 
-          type="button" 
-          className={`hamburger-btn ${isMobileMenuOpen ? 'open' : ''}`}
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Toggle navigation menu"
-        >
-          <span className="hamburger-line line-1"></span>
-          <span className="hamburger-line line-2"></span>
-          <span className="hamburger-line line-3"></span>
-        </button>
+        {!isMobileMenuOpen && (
+          <button 
+            type="button" 
+            className="hamburger-btn"
+            onClick={() => setIsMobileMenuOpen(true)}
+            aria-label="Toggle navigation menu"
+          >
+            <span className="hamburger-line line-1"></span>
+            <span className="hamburger-line line-2"></span>
+            <span className="hamburger-line line-3"></span>
+          </button>
+        )}
       </div>
 
       {/* Mobile Drawer Navigation */}
@@ -89,14 +92,14 @@ export default function Navbar({ onNavigate, onOpenOrder, currentView }) {
         <div className="mobile-menu-backdrop" onClick={() => setIsMobileMenuOpen(false)}></div>
         <div className="mobile-menu-content">
           <div className="mobile-menu-header">
-            <img src="/logo1.png" alt="The Food Basket" className="mobile-menu-logo" />
+            {/* Logo removed from sidebar */}
             <button 
               type="button" 
               className="mobile-close-btn"
               onClick={() => setIsMobileMenuOpen(false)}
               aria-label="Close menu"
             >
-              &times;
+              ✕
             </button>
           </div>
 
@@ -109,16 +112,15 @@ export default function Navbar({ onNavigate, onOpenOrder, currentView }) {
           </nav>
 
           <div className="mobile-menu-footer">
-            <button 
-              type="button" 
+            <a 
+              href="https://wa.me/234912004419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-order-now mobile-btn"
-              onClick={() => {
-                setIsMobileMenuOpen(false);
-                onOpenOrder();
-              }}
+              onClick={() => setIsMobileMenuOpen(false)}
             >
               Order Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

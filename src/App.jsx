@@ -47,8 +47,10 @@ export default function App() {
   };
 
   const handleOpenOrder = (size = 'mini') => {
-    setSelectedSize(size);
-    setIsOrderModalOpen(true);
+    const text = encodeURIComponent(
+      `Hello The Food Basket! I would like to place an order for ${size} size banana bread.`
+    );
+    window.open(`https://wa.me/234912004419?text=${text}`, '_blank');
   };
 
   return (
