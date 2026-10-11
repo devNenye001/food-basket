@@ -37,7 +37,7 @@ export default function Footer({ onNavigate }) {
           <div className="footer-text-group">
             <p className="footer-order-info">Delivery: Every location in the city of Abuja</p>
             <p className="footer-order-info">
-              Call or text: <a href="tel:0912004419" className="footer-tel">0912004419</a>
+              Call or text: <a href="tel:09120504419" className="footer-tel">09120504419</a>
             </p>
           </div>
         </div>

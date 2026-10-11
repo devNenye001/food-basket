@@ -50,7 +50,7 @@ export default function App() {
     const text = encodeURIComponent(
       `Hello The Food Basket! I would like to place an order for ${size} size banana bread.`
     );
-    window.open(`https://wa.me/234912004419?text=${text}`, '_blank');
+    window.open(`https://wa.me/2349120504419?text=${text}`, '_blank');
   };
 
   return (

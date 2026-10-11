@@ -9,7 +9,7 @@ const faqs = [
   {
     question: 'How do I place an order?',
     answer:
-      'You can easily place an order right here by clicking any "Order Now" button, or by calling or texting our hotline at 0912004419. We accept orders daily.',
+      'You can easily place an order right here by clicking any "Order Now" button, or by calling or texting our hotline at 09120504419. We accept orders daily.',
   },
   {
     question: 'What flavours do you have?',

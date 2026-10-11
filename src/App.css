@@ -78,8 +78,41 @@
 }
 
 /* --------------------------------------------------------------------------
-   NAVBAR (HEADER)
+   NAVBAR & TOP MARQUEE
    -------------------------------------------------------------------------- */
+.top-marquee-bar {
+  background-color: #FFEFC1;
+  color: #4A2E1B;
+  font-family: var(--font-hand);
+  padding: 5px 0;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.35rem;
+  line-height: 1.1;
+  position: relative;
+  z-index: 1002;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 25s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
 .navbar-header {
   position: absolute;
   top: 0;
@@ -342,6 +375,17 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 10, 6, 0.38);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .about-doodles {
@@ -796,6 +840,16 @@
   object-fit: cover;
 }
 
+.cta-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 5, 3, 0.68);
+  z-index: 2;
+}
+
 .cta-content {
   position: relative;
   z-index: 3;
@@ -1184,7 +1238,10 @@
     font-size: 2.6rem;
   }
   .about-title {
-    font-size: 2.2rem;
+    font-size: 2.05rem;
+  }
+  .about-description {
+    font-size: 0.92rem;
   }
   .doodle-left {
     width: 120px;

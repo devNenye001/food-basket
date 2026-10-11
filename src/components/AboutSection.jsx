@@ -12,6 +12,7 @@ export default function AboutSection() {
             className="about-bg-img" 
           />
         </picture>
+        <div className="about-overlay"></div>
       </div>
 
       {/* Hand-drawn Doodles */}

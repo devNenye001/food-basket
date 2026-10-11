@@ -37,6 +37,18 @@ export default function Navbar({ onNavigate, onOpenOrder, currentView }) {
 
   return (
     <header className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
+      {/* Top Moving Marquee Announcement Bar */}
+      <div className="top-marquee-bar">
+        <div className="marquee-track">
+          <span className="marquee-content">
+            Minimum order quantity for mini's is 4 pieces &nbsp;&nbsp;•&nbsp;&nbsp; Loaves are available on PREORDER &nbsp;&nbsp;•&nbsp;&nbsp; Minimum order quantity for mini's is 4 pieces &nbsp;&nbsp;•&nbsp;&nbsp; Loaves are available on PREORDER &nbsp;&nbsp;•&nbsp;&nbsp;
+          </span>
+          <span className="marquee-content" aria-hidden="true">
+            Minimum order quantity for mini's is 4 pieces &nbsp;&nbsp;•&nbsp;&nbsp; Loaves are available on PREORDER &nbsp;&nbsp;•&nbsp;&nbsp; Minimum order quantity for mini's is 4 pieces &nbsp;&nbsp;•&nbsp;&nbsp; Loaves are available on PREORDER &nbsp;&nbsp;•&nbsp;&nbsp;
+          </span>
+        </div>
+      </div>
+
       <div className="navbar-container">
         {/* Brand Logo */}
         <a 
@@ -63,7 +75,7 @@ export default function Navbar({ onNavigate, onOpenOrder, currentView }) {
         {/* Desktop CTA */}
         <div className="navbar-cta-desktop">
           <a 
-            href="https://wa.me/234912004419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
+            href="https://wa.me/2349120504419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
             target="_blank"
             rel="noopener noreferrer"
             className="btn-order-now"
@@ -113,7 +125,7 @@ export default function Navbar({ onNavigate, onOpenOrder, currentView }) {
 
           <div className="mobile-menu-footer">
             <a 
-              href="https://wa.me/234912004419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
+              href="https://wa.me/2349120504419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-order-now mobile-btn"

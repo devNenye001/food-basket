@@ -17,7 +17,7 @@ export default function CtaBanner({ onOpenOrder }) {
           Sooo... which loaf are we getting you?
         </h2>
         <a 
-          href="https://wa.me/234912004419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
+          href="https://wa.me/2349120504419?text=Hello%20The%20Food%20Basket!%20I%20would%20like%20to%20place%20an%20order."
           target="_blank"
           rel="noopener noreferrer"
           className="btn-order-now btn-cta"

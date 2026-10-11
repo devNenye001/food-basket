@@ -40,7 +40,7 @@ export default function OrderModal({ isOpen, onClose, initialSize }) {
 👤 Customer Name: ${customerName || 'Customer'}
 📝 Notes: ${notes || 'None'}`;
 
-    const url = `https://wa.me/234912004419?text=${encodeURIComponent(message)}`;
+    const url = `https://wa.me/2349120504419?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
 
@@ -148,10 +148,10 @@ export default function OrderModal({ isOpen, onClose, initialSize }) {
 
           <div className="modal-actions">
             <button type="submit" className="btn-order-now btn-modal-submit">
-              Order via WhatsApp (0912004419)
+              Order via WhatsApp (09120504419)
             </button>
-            <a href="tel:0912004419" className="btn-modal-call">
-              Or Call 0912004419
+            <a href="tel:09120504419" className="btn-modal-call">
+              Or Call 09120504419
             </a>
           </div>
         </form>
